@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Golos+Text:wght@700&display=swap');
+*{
+    margin: 0vh 0vw;
+    padding: 0%;
+    overflow-x: hidden;
+    font-family: 'Golos Text', sans-serif;
+}
+
+
+    /* NAVBAR */
+
+.navbar{
+    display: flex;
+    width: 98vw;
+    height: 13vh;
+}
+.r_navbar{
+    display: grid;
+    height: 100%;
+    align-items: center;
+    grid-template-columns:auto 7.25rem 8rem 8rem 9rem 8rem;
+    width: 50%;
+    overflow: visible;
+}
+.arrow{
+    height: 11px;
+    width: 11px;
+}
+.navlist{
+    font-size: 20px;
+}
+.l_navbar{
+    display: grid;
+    justify-content: center;
+    grid-template-columns:4.3rem 8rem 8rem;
+    font-size: 20px;
+    width: 50%;
+}
+a{
+    text-decoration: none;
+    color: rgb(18, 16, 110);
+}
+li{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    padding-right: 23px;
+    font-weight: bold;
+}
+.img {
+    height: 2.5rem;
+    width: 2.25rem;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+
+        /* CARD */
+
+
+.tag{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh;
+
+}
+.tagline{
+    text-align: left;
+    font-size: 4.7rem;
+    width: 70%;
+    font-weight: bolder;
+    color: #001c64;
+}
+.tag_item1{
+    font-size: 3.5rem;
+    font-weight: 600;
+    padding: 5px;
+}
+.tag_item2{
+    display: flex;
+    height: 20%;
+    flex-direction: column;
+    font-size: 1.2rem;
+    padding: 17px 58px 17px 0px;
+}
+.big_card{
+    color: white;
+    background-color: rgb(21, 21, 132);
+    display: flex;
+    flex-direction: row;
+    height: 64%;
+    width: 78%;
+    border-radius: 30px;
+    overflow: hidden;
+}
+.tag_para{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+    padding: 0px 54px;
+    height: 100%;
+    width: 50%;
+   }
+.tag_img{
+    height: 100%;
+    width: 50%;
+}
+.btn{
+    position: relative;
+    border: none;
+    height: 60%;
+    width: 61%;
+    font-size: 1.3rem;
+    border-radius: 50px;
+    font-weight: 700;
+    color: navy;
+}
+
+
+.s_box{
+    display: flex;
+    flex-direction: column;
+    height: 27vh;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.s_text{
+    text-align: left;
+    width: 78%;
+    font-size: 2.3rem;
+    color: #001c64;
+}
+.discover{
+    text-align: left;
+    width: 78%;
+    font-size: 1.5rem;
+    color: #0070e0;
+    font-weight: 600;
+}
+.card_section{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 88vh;
+    width: 120%;
+    max-width: 120vw;
+    padding: 0px 9vw;
+}
+.card{
+    width: 30vw;
+    height: 84%;
+    border-radius: 30px;
+    overflow: hidden;
+    margin: 0px 2vw;
+}
+.c_img{
+    height: 55%;
+    width: 100%;
+}
+.c_text{
+    background-color: rgb(255, 238, 238);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    height: 45%;
+    width: 100%;
+    font-size: 2rem;
+}
+.txt1{
+    width: 80%;
+    padding: 25px 0px;
+    color: #001c64;
+}
+.txt2{
+    width: 79%;
+    font-size: 1.3rem;
+    color: #0070e0;
+}
+.info_sec{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.info_txt{
+    font: 0.9rem sans-serif;
+    width: 78%;
+    color: rgb(1, 1, 82);
+}
+.More_ways{
+    display: flex;
+    height: 45vh;
+    flex-direction: column;
+    width: 78%;
+    padding: 0% 11%;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    color: #001c64;
+}
+.bottom_sec{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 330vh;
+    width: 100%;
+}
+.bottom_card{
+    display: flex;
+    width: 78%;
+    height: 100vh;
+    margin: 5vh 0vw;
+}
+.bottom_img1{
+    width: 50%;
+    border-radius: 50px;
+    overflow: hidden;
+}
+.bottom_text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    padding: 0vh 2vw;
+}
+.bottom_big{
+    padding: 20px 30px;
+    font-size: 4rem;
+    color: #001c64;
+}
+.bottom_small{
+    padding: 10px 40px;
+    line-height: 1.6;
+    color: #001c64;
+    font-weight: 100;
+    font-size: 1rem;
+    font-family: 'Golos Text', sans-serif;
+}
+#bottom_2{
+    flex-direction: row-reverse;
+   }
+#bottom_img_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(bg_b.jpg);
+   }
+#b_img2{
+    object-fit: 50%;
+    width: 80%;
+    height: 40%;
+}
