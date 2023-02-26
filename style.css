@@ -285,7 +285,6 @@ li{
     grid-area: 1/1/1/4;
     font: 1rem sans-serif;
     color: #001c64;
-    /* background-color: green; */
 }
 #b_item2{
     grid-area: 2/1/4/2;
@@ -312,7 +311,6 @@ li{
     grid-area: 4/1/4/3;
     font: 1rem sans-serif;
     color: #001c64;
-    /* background-color: black; */
 }
 .QR_img{
     height: 10rem;
