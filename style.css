@@ -209,7 +209,7 @@ li{
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 330vh;
+    height: 450vh;
     width: 100%;
 }
 .bottom_card{
@@ -244,7 +244,7 @@ li{
     font-size: 1rem;
     font-family: 'Golos Text', sans-serif;
 }
-#bottom_2{
+.bottom_2{
     flex-direction: row-reverse;
    }
 #bottom_img_container{
@@ -257,4 +257,16 @@ li{
     object-fit: 50%;
     width: 80%;
     height: 40%;
+}
+.Join_big{
+    font-size: 3rem;
+    padding: 0vh 3vw;
+}
+#QR{
+    display: grid;
+
+    background-color: red;
+    width: 50%;
+    height: 50%;
+    overflow: hidden;
 }
