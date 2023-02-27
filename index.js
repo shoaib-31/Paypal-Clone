@@ -1,5 +1,6 @@
-const personal = document.getElementById("personal")
-const dropdown = document.getElementById("dropdown")
+const personal = document.getElementById("personal");
+const dropdown = document.getElementById("dropdown");
+const big_card=document.getElementsByClassName("big_card");
 personal.addEventListener("mouseover", () => {
     document.getElementById("dropdown").innerHTML = `
     <div class="drop_head">
@@ -46,13 +47,24 @@ personal.addEventListener("mouseover", () => {
          <div class="c4_1">
              <img src="/images/icon_paypal.png" alt="icon">
              How PayPal Works
-         </div>
-     </div>
- </div>
-    `;
+             </div>
+             </div>
+             </div>
+             `;
     dropdown.classList.add("dropdown");
+    dropdown.classList.add("h_effect");
+    dropdown.classList.remove("h_make_0");
 });
-dropdown.addEventListener("mouseout", () => {
+dropdown.addEventListener("mouseleave", () => {
     document.getElementById("dropdown").innerHTML = ``;
+    dropdown.classList.remove("h_effect");
+    dropdown.classList.add("h_make_0");
     dropdown.classList.remove("dropdown");
 });
+
+function slide_r() {
+    let margin = document.getElementById("card_section").style.marginLeft = "-34vw";
+}
+function slide_l() {
+    let margin = document.getElementById("card_section").style.marginLeft = "0";
+}

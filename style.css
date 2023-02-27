@@ -219,6 +219,9 @@ a {
 
 .card_section {
     display: flex;
+    transition-property: margin-left;
+    transition: ease-in-out;
+    transition-duration: 0.5s; 
     align-items: center;
     justify-content: space-evenly;
     height: 88vh;
@@ -228,11 +231,12 @@ a {
 }
 
 .card {
-    width: 30vw;
-    height: 84%;
+    width: 26vw;
+    height: 80%;
     border-radius: 30px;
     overflow: hidden;
     margin: 0px 2vw;
+
 }
 
 .c_img {
@@ -534,8 +538,10 @@ a {
     color: #001c64;
     display: flex;
     align-items: center;
+    overflow: hidden;
 }
 .drop_card{
+    overflow: hidden;
     height: 50vh;
     width: 78%;
     display: grid;
@@ -565,7 +571,7 @@ a {
 .card_items{
     padding: 6px 10px;
     margin: 3px;
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: #001c64;
 }
 .card_items:hover{
@@ -590,7 +596,7 @@ hr {
     width: 15vw;
     height: 10vh;
     margin: 3vh 0vw;
-    background-color: rgb(249, 247, 247);
+    background-color: rgb(235, 234, 234);
     align-items: center;
     font-size: 1.2rem;
     border-radius: 20px;
@@ -603,18 +609,72 @@ hr {
     font-weight: 600;
     border: 1px solid gainsboro;
     background-color: white;
-    
 }
 .dropdown{
     width: 100%;
-    height: 60vh;
+    height: 0vh;
     position: absolute;
     z-index: 1;
     background-color: white;
+    transition-property: height;
     transition-timing-function: ease-in-out;
-    transition-duration: 0.5s;
+    transition-duration: 0.4s;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+.h_effect{
+    height: 60vh;
+}
+.h_make_0{
+    height: 0vh;
+}
+.slider_box_r{
+    position: absolute;
+    width: 95vw;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    left: 0%;
+}
+.slider_box_l{
+    position: absolute;
+    width: 95vw;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    left: 0%;
+}
+.slider_r{
+    width: 8vh;
+    height: 8vh;
+    font-size: 2rem;
+    border-radius: 50%;
+    z-index: 2;
+    border: 0px;
+    background-color: ghostwhite;
+    opacity: 0.5;
+    transition: ease-in-out;
+}
+.slider_r:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+.slider_l{
+    width: 8vh;
+    height: 8vh;
+    z-index: 2;
+    cursor: pointer;
+    font-size: 2rem;
+    border-radius: 50%;
+    border: 0px;
+    background-color: ghostwhite;
+    opacity: 0.5;
+    transition: ease-in-out;
+}
+.slider_l:hover{
+    opacity: 0.8;
 }
