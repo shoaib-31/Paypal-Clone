@@ -1,6 +1,6 @@
 const personal = document.getElementById("personal");
 const dropdown = document.getElementById("dropdown");
-const big_card=document.getElementsByClassName("big_card");
+const overlay = document.getElementById("overlay");
 personal.addEventListener("mouseover", () => {
     document.getElementById("dropdown").innerHTML = `
     <div class="drop_head">
@@ -54,10 +54,13 @@ personal.addEventListener("mouseover", () => {
     dropdown.classList.add("dropdown");
     dropdown.classList.add("h_effect");
     dropdown.classList.remove("h_make_0");
+    overlay.style.display="block";
 });
 dropdown.addEventListener("mouseleave", () => {
     document.getElementById("dropdown").innerHTML = ``;
     dropdown.classList.remove("h_effect");
+    
+    overlay.style.display="none";
     dropdown.classList.add("h_make_0");
     dropdown.classList.remove("dropdown");
 });
