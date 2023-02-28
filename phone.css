@@ -1,0 +1,36 @@
+.big_card{
+    flex-direction: column-reverse;
+}
+.tag_para {
+    height: 40%;
+    width: 100%;
+}
+
+.tag_img {
+    height: 60%;
+    width: 100%;
+}
+.bottom_card{
+    flex-direction: column;
+}
+.bottom_img1 {
+    height: 50%;
+    width: 100%;
+}
+.bottom_text{
+    height: 50%;
+    width: 100%;
+}
+.first_menu{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.second_menu{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.footer_sec{
+    height: 150vh;
+}
