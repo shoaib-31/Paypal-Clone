@@ -1,73 +1,101 @@
 const personal = document.getElementById("personal");
-const dropdown = document.getElementById("dropdown");
+const dropdown1 = document.getElementById("dropdown1");
+const business = document.getElementById("business");
+const dropdown2 = document.getElementById("dropdown2");
+const enterprise = document.getElementById("enterprise");
+const dropdown3 = document.getElementById("dropdown3");
 const overlay = document.getElementById("overlay");
+const logo = document.getElementById("logo");
+const developer = document.getElementById("Developer");
+const card_section = document.getElementById("card_section");
+
+
+//DROPDOWN 1
+
 personal.addEventListener("mouseover", () => {
-    document.getElementById("dropdown").innerHTML = `
-    <div class="drop_head">
-    <div class="head_txt card_items">
-        PayPal for You
-     </div>
- </div>
- <div class="drop_card">
-     <div class="card_ele c1">
-         <div class="card_items main_txt">Shop and Buy</div>
-         <hr>
-         <div class="card_items">Buy Now, Pay Later</div>
-         <div class="card_items">Buy Now, Pay Later</div>
-         <div class="card_items">Pay with Rewards</div>
-         <div class="card_items">Pay with QR Codes</div>
-         <div class="card_items">Checkout with Crypto</div>
-         <div class="card_items">PayPal Credit and Cards</div>
-     </div>
-     <div class="card_ele c2">
-         <div class="card_items main_txt">Send and Receive</div>
-         <hr>
-         <div class="card_items">Send Money</div>
-         <div class="card_items">Request Money</div>
-         <div class="card_items">Start Selling</div>
-         <div class="card_items">Donate and Raise Funds</div>
-         
-     </div>
-     <div class="card_ele c3">
-         <div class="card_items main_txt">Manage Your Money</div>
-         <hr>
-         <div class="card_items">Set up Direct Deposit</div>
-         <div class="card_items">Deposit Checks</div>
-         <div class="card_items">Add Cash</div>
-         <div class="card_items">Savings and Goals</div>
-         <div class="card_items">Buy and Sell Crypto</div>
-         <div class="card_items">Pay Bills</div>
-         
-     </div>
-     <div class="card_ele c4">
-         <div class="c4_1">
-             <img src="/images/icon_download.png" alt="icon">
-             Get the App
-         </div>
-         <div class="c4_1">
-             <img src="/images/icon_paypal.png" alt="icon">
-             How PayPal Works
-             </div>
-             </div>
-             </div>
-             `;
-    dropdown.classList.add("dropdown");
-    dropdown.classList.add("h_effect");
-    dropdown.classList.remove("h_make_0");
-    overlay.style.display="block";
+    //DROPDOWN 1 ADD
+    dropdown1.classList.add("h_effect");
+    dropdown1.classList.remove("h_make_0");
+    overlay.style.display = "block";
+    //OTHERS REMOVE
+    dropdown2.classList.remove("h_effect");
+    // overlay.style.display = "none";
+    dropdown2.classList.add("h_make_0");
 });
-dropdown.addEventListener("mouseleave", () => {
-    document.getElementById("dropdown").innerHTML = ``;
-    dropdown.classList.remove("h_effect");
-    
-    overlay.style.display="none";
-    dropdown.classList.add("h_make_0");
-    dropdown.classList.remove("dropdown");
+dropdown1.addEventListener("mouseleave", () => {
+    dropdown1.classList.remove("h_effect");
+    overlay.style.display = "none";
+    dropdown1.classList.add("h_make_0");
+});
+logo.addEventListener("mouseover", () => {
+    dropdown1.classList.remove("h_effect");
+    overlay.style.display = "none";
+    dropdown1.classList.add("h_make_0");
+
 });
 
+//DROPDOWN 2
+
+business.addEventListener("mouseover", () => {
+    //DROPDOWN 2 ADD
+    dropdown2.classList.add("h_effect");
+    dropdown2.classList.remove("h_make_0");
+    overlay.style.display = "block";
+
+    //OTHERS REMOVE
+    dropdown1.classList.remove("h_effect");
+    // overlay.style.display = "none";
+    dropdown1.classList.add("h_make_0");
+    dropdown3.classList.remove("h_effect");
+    // overlay.style.display = "none";
+    dropdown3.classList.add("h_make_0");
+});
+dropdown2.addEventListener("mouseleave", () => {
+    dropdown2.classList.remove("h_effect");
+    overlay.style.display = "none";
+    dropdown2.classList.add("h_make_0");
+});
+//DROPDOWN 3
+
+enterprise.addEventListener("mouseover", () => {
+    //DROPDOWN 3 ADD
+    dropdown3.classList.add("h_effect");
+    dropdown3.classList.remove("h_make_0");
+    overlay.style.display = "block";
+
+    //OTHERS REMOVE
+    dropdown2.classList.remove("h_effect");
+    // overlay.style.display = "none";
+    dropdown2.classList.add("h_make_0");
+});
+dropdown3.addEventListener("mouseleave", () => {
+    dropdown3.classList.remove("h_effect");
+    overlay.style.display = "none";
+    dropdown3.classList.add("h_make_0");
+});
+developer.addEventListener("mouseover", () => {
+    dropdown3.classList.remove("h_effect");
+    overlay.style.display = "none";
+    dropdown3.classList.add("h_make_0");
+
+});
+
+
+
+let pos = 0;
+
 function slide_r() {
-    let margin = document.getElementById("card_section").style.marginLeft = "-34vw";
+    if (pos >= -17) {
+        pos = pos - 17;
+        document.getElementById("card_section").style.marginLeft = pos + "vw";
+    }
+    document.getElementById("slider_l").style.display = "block";
 }
 function slide_l() {
-    let margin = document.getElementById("card_section").style.marginLeft = "0";
+    pos = pos + 17;
+    document.getElementById("card_section").style.marginLeft = pos + "vw";
+    if (pos == 0) {
+        document.getElementById("slider_l").style.display = "none";
+
+    }
 }

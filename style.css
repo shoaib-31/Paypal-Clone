@@ -530,6 +530,7 @@ a {
 .p_h{
     color: #0070e0;
     font-weight: 900;
+    cursor: pointer;
 }
 
 .drop_head{
@@ -618,17 +619,19 @@ hr {
     background-color: white;
     transition-property: height;
     transition-timing-function: ease-in-out;
-    transition-duration: 0.2s;
-    display: flex;
+    transition-duration: 1s;
+    display: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 .h_effect{
     height: 60vh;
+    display: flex;
 }
 .h_make_0{
     height: 0vh;
+    display: none;
 }
 .slider_box_r{
     position: absolute;
@@ -664,6 +667,8 @@ hr {
     cursor: pointer;
 }
 .slider_l{
+    display: none;
+    margin-left: 5vw;
     width: 8vh;
     height: 8vh;
     z-index: 2;
