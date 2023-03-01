@@ -34,3 +34,59 @@
 .footer_sec{
     height: 150vh;
 }
+.navlist{
+    display:none !important;
+}
+/* #personal #business #enterprise #Developer{
+    display: block;
+} */
+.tagline{
+    font-size: 4rem;
+}
+#item1{
+    display: none;
+}
+.navbar{
+    justify-content: flex-end;
+}
+.r_navbar{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+#item2{
+    width: 30%;
+}
+#item3{
+    width: 30%;
+}
+#item4{
+    display: flex;
+    cursor: pointer;
+}
+#side_m{
+    height: 100%;
+    width: 0%;
+    background-color: white;
+    z-index: 5;
+    position: absolute;
+    margin-top: 14vh;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.5s;
+    display: flex;
+    flex-direction: column;
+}
+.side{
+    width: 69%;
+    height: 10%;
+    display: flex;
+    font-size: 3vw;
+    color: #001c64;
+    align-items: center;
+    justify-content: space-between;
+}
+.scroll{
+    position: fixed;
+    height: 100vh;
+    overflow: hidden;
+}

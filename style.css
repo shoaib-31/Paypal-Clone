@@ -5,9 +5,7 @@
     padding: 0%;
     overflow-x: hidden;
     font-family: 'Open Sans', sans-serif;
-
 }
-
 
 /* NAVBAR */
 
@@ -97,6 +95,14 @@ a {
 #item3:hover{
     background-color: #0070e0;
 }
+#item4{
+    border: 1px solid rgb(211, 211, 211);
+    border-radius: 72%;
+    display: none;
+    width: 60px;
+    justify-content: center;
+    align-items: center;
+}
 
 .r_navbar li {
     display: flex;
@@ -159,6 +165,13 @@ a {
     border-radius: 30px;
     overflow: hidden;
 }
+.card_text{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .tag_para {
     display: flex;
@@ -167,7 +180,7 @@ a {
     align-items: center;
     padding: 0px 0px 0px 2.8vw;
     height: 100%;
-    width: 50%;
+    width: 80%;
 }
 
 .tag_img {
@@ -284,8 +297,9 @@ a {
     display: flex;
     height: 45vh;
     flex-direction: column;
-    width: 78%;
-    padding: 0% 11%;
+    width: 50%;
+    text-align: center;
+    padding: 0% 25%;
     justify-content: center;
     align-items: center;
     font-size: 4rem;

@@ -8,8 +8,10 @@ const overlay = document.getElementById("overlay");
 const logo = document.getElementById("logo");
 const developer = document.getElementById("Developer");
 const card_section = document.getElementById("card_section");
-
-
+const burger = document.getElementById("item4");
+const cross = document.getElementsByClassName("burger");
+const side_m=document.getElementById("side_m");
+const scroll= document.getElementById("scroll");
 //DROPDOWN 1
 
 personal.addEventListener("mouseover", () => {
@@ -99,3 +101,29 @@ function slide_l() {
 
     }
 }
+
+//BURGER
+let a = false;
+
+burger.addEventListener("click", () => {
+    if (a == false) {
+        burger.innerHTML = `<i class="fa fa-close" style="color: #001c64; font-size: 3rem;"></i>`;
+        a = true;
+        side_m.innerHTML=` <div class="side">Personal <span>></span></div>
+        <div class="side">Business <span>></span></div>
+        <div class="side">Enterprise <span>></span></div>
+        <div class="side">Developer </div>
+        <div class="side">Help</div>`;
+        side_m.style.width="100%";
+        scroll.classList.add("scroll");
+        
+    }
+    else {
+        burger.innerHTML = `<i style="color: #001c64; font-size: 3rem;" class="fa fa-solid fa-bars"></i>`;
+        a = false;
+        side_m.style.width="0%";
+        side_m.innerHTML=``;
+        scroll.classList.remove("scroll");
+    }
+});
+
