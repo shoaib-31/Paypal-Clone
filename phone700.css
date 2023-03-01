@@ -1,24 +1,35 @@
 #item2{
     width: 30%;
     height: 30%;
+    overflow: hidden;
 }
-#item3{
-    width: 30%;
+#item3 {
+    overflow: hidden;
+    width: 35%;
     height: 30%;
 }
 .r_navbar{
-    font-size: 15px;
+    font-size: 3.5vw;
+}
+.s_text {
+    text-align: left;
+    width: 78%;
+    font-size: 8vw;
+    color: #001c64;
+}
+.discover{
+    font-size: 4vw;
 }
 .card_section{
-    height: 80vw;
-    width: 180%;
-    max-width: 180vw;
+    height: 75vw;
+    width: 175%;
+    max-width: 175vw;
 }
 .c_text{
     font-size: 4vw;
 }
 .txt2{
-    font-size: 2vw;
+    font-size: 3vw;
 }
 .card{
     width: 40vw;
@@ -32,8 +43,19 @@
 #QR{
     display: flex;
     flex-direction: column;
+    height: 110%;
+    margin-top: 10vw;
     justify-content: space-between;
     align-items: center;
+}
+#b_item3 {
+    width: 70vw;
+    height: 17vw;
+}
+#b_item5 {
+    grid-area: 4/1/4/3;
+    font: 4vw sans-serif;
+    color: #001c64;
 }
 .side{
     width: 50%;
@@ -41,12 +63,59 @@
 .s_slider{
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: 6%;
     color: black;
     z-index: 5;
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    margin: -17vw 5vw;
-    font-size: 100px;
+    margin: -12vw 5vw;
+    font-size: 10vw;
+    cursor: pointer;
+    overflow: hidden;
+}
+#s_r{
+    color: rgb(174, 174, 174);
+}
+.footer_sec{
+    height: 190vh;
+}
+.footer_para{
+    height: 140vh;
+}
+.bottom_big{
+    font-size: 8vw;
+}
+.bottom_small {
+    padding: 10px 8vw;
+    line-height: 1.6;
+    color: #001c64;
+    font-weight: 100;
+    font-size: 1rem;
+    font: 3vw sans-serif;
+}
+.More_ways{
+    font-size: 10.5vw;
+    width: 60%;
+}
+.para {
+    font: 3vw sans-serif;
+    line-height: 1.4;
+}
+.first_menu{
+    font-size: 2vw;
+}
+.second_menu{
+    font-size: 2vw;
+}
+.tagline{
+    font-size: 8vw;
+}
+.tag_item1 {
+    font-size: 6.5vw;
+    font-weight: 600;
+    padding: 5px;
+}
+.btn{
+    border-radius: 5vw;
 }

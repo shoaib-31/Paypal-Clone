@@ -12,6 +12,8 @@ const burger = document.getElementById("item4");
 const cross = document.getElementsByClassName("burger");
 const side_m = document.getElementById("side_m");
 const scroll = document.getElementById("scroll");
+const s_r = document.getElementById("s_r");
+const s_l = document.getElementById("s_l");
 //DROPDOWN 1
 
 personal.addEventListener("mouseover", () => {
@@ -91,7 +93,6 @@ function slide_r() {
         if (pos >= -17) {
             pos = pos - 34;
             document.getElementById("card_section").style.marginLeft = pos + "vw";
-            console.log(window.innerWidth);
         }
         document.getElementById("slider_l").style.display = "flex";
 }
@@ -109,7 +110,7 @@ let a = false;
 
 burger.addEventListener("click", () => {
     if (a == false) {
-        burger.innerHTML = `<i class="fa fa-close" style="color: #001c64; font-size: 3rem;"></i>`;
+        burger.innerHTML = `<i class="fa fa-close" style="color: #001c64; border-radius: 6%;font-size: 4vw;"></i>`;
         a = true;
         side_m.innerHTML = ` <div class="side">Personal <span>></span></div>
         <div class="side">Business <span>></span></div>
@@ -121,7 +122,7 @@ burger.addEventListener("click", () => {
 
     }
     else {
-        burger.innerHTML = `<i style="color: #001c64; font-size: 3rem;" class="fa fa-solid fa-bars"></i>`;
+        burger.innerHTML = `<i style="color: #001c64; font-size: 4vw; border-radius: 6%;" class="fa fa-solid fa-bars"></i>`;
         a = false;
         side_m.style.width = "0%";
         side_m.innerHTML = ``;
@@ -129,3 +130,17 @@ burger.addEventListener("click", () => {
     }
 });
 
+
+//SMALL SLIDER
+
+
+s_r.addEventListener("click",()=>{
+    document.getElementById("card_section").style.marginLeft = "-90vw";
+    s_r.style.color="black";
+    s_l.style.color="rgb(174, 174, 174)";
+});
+s_l.addEventListener("click",()=>{
+    document.getElementById("card_section").style.marginLeft = "0vw";
+    s_l.style.color="black";
+    s_r.style.color="rgb(174, 174, 174)";
+});

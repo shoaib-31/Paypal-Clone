@@ -38,6 +38,9 @@
 .footer_sec{
     height: 150vh;
 }
+.footer_para{
+    height: 95vh;
+}
 .navlist{
     display:none !important;
 }
@@ -64,9 +67,11 @@
 #item3{
     width: 30%;
 }
-#item4{
+#item4 {
     display: flex;
     cursor: pointer;
+    width: 5vw;
+    height: 5vw;
 }
 #side_m{
     height: 100%;
@@ -84,7 +89,7 @@
     width: 69%;
     height: 10%;
     display: flex;
-    font-size: 2.8rem;
+    font-size: 4.8vw;
     color: #001c64;
     align-items: center;
     justify-content: space-between;

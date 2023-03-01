@@ -282,7 +282,7 @@ a {
     z-index: 4;
 }
 
-.info_sec {
+#info_sec {
     display: flex;
     justify-content: center;
     align-items: center;
