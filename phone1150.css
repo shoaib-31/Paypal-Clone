@@ -1,6 +1,10 @@
 .big_card{
     flex-direction: column-reverse;
 }
+.card_text{
+    width: 100%;
+
+}
 .tag_para {
     height: 40%;
     width: 100%;
@@ -80,7 +84,7 @@
     width: 69%;
     height: 10%;
     display: flex;
-    font-size: 3vw;
+    font-size: 2.8rem;
     color: #001c64;
     align-items: center;
     justify-content: space-between;

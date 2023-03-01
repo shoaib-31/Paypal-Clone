@@ -166,7 +166,7 @@ a {
     overflow: hidden;
 }
 .card_text{
-    width: 100%;
+    width: 50%;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -278,6 +278,8 @@ a {
     width: 79%;
     font-size: 1.3vw;
     color: #0070e0;
+    cursor: pointer;
+    z-index: 4;
 }
 
 .info_sec {
@@ -451,6 +453,7 @@ a {
 .fbtn:hover{
     background-color: #0070e0;
     color: white;
+    cursor: pointer;
 }
 .footer_sec{
     width: 100%;
@@ -533,7 +536,7 @@ a {
 }
 .footer_para{
     display: flex;
-    height: 80vh;
+    height: 82vh;
     flex-direction: column;
     justify-content: space-evenly;
 }
