@@ -1,0 +1,52 @@
+#item2{
+    width: 30%;
+    height: 30%;
+}
+#item3{
+    width: 30%;
+    height: 30%;
+}
+.r_navbar{
+    font-size: 15px;
+}
+.card_section{
+    height: 80vw;
+    width: 180%;
+    max-width: 180vw;
+}
+.c_text{
+    font-size: 4vw;
+}
+.txt2{
+    font-size: 2vw;
+}
+.card{
+    width: 40vw;
+}
+.slider_r{
+    display: none;
+}
+.slider_l{
+    display: none;
+}
+#QR{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.side{
+    width: 50%;
+}
+.s_slider{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    color: black;
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: -17vw 5vw;
+    font-size: 100px;
+}
